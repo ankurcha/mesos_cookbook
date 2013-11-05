@@ -26,8 +26,8 @@ suites:
 - name: default
   run_list:
   - recipe[apt]
-  - recipe[mesosphere_mesos::master]
-  - recipe[mesosphere_mesos::slave]
+  - recipe[mesos::master]
+  - recipe[mesos::slave]
   - recipe[minitest-handler]
   attributes:
     mesos:
